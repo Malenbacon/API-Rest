@@ -9,7 +9,7 @@ npm start
 ```
 - Use a program to simulate http requests. I recommend postman or insomnia
 
-##Project working (gifs):
+## Project working (gifs):
 - POST and GET
 <img alt="POST AND GET" src="https://i.imgur.com/znMyLQG.gif">
 
