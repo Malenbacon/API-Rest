@@ -11,8 +11,7 @@ app.use('/api', routes);
 
 mongoose.set('strictQuery', false);
 mongoose.connect(process.env.DATABASE_URL)
-  .then(() => 
-  {
+  .then(() => {
     app.listen(3000);
     console.log('conectou ao mongo');
   })
