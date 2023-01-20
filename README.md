@@ -1,7 +1,7 @@
 # Api Restfull
 - Creating an Api for training that have GET , POST , PUT and DELETE
 
-##How can you can you run it?
+## How can you can you run it?
 - You need to download the project, create a .env, put your database connection link and execute these commands in the project folder:
 ```javascript
 npm i
