@@ -1,4 +1,4 @@
-# Api Restfull
+# Api Rest
 - Creating an Api for training that have GET , POST , PUT and DELETE
 
 ## How can you can you run it?
