@@ -1,15 +1,19 @@
-const express = require('express')
-const mongoose = require('mongoose')
-require('dotenv').config()
-const app = express()
-const routes = express.Router()
+const express = require('express');
+const mongoose = require('mongoose');
+require('dotenv').config();
+const routes = require('./routes/router')
 
-app.use(express.json())
-app.use(routes)
+const app = express();
+app.use(express.json());
 
+
+app.use('/api', routes);
+
+mongoose.set('strictQuery', false);
 mongoose.connect(process.env.DATABASE_URL)
-.then(() => {
-    app.listen(3000)
-    console.log('conectou ao mongodb')
-})
-.catch((e) => console.log(e))
+  .then(() => 
+  {
+    app.listen(3000);
+    console.log('conectou ao mongo');
+  })
+  .catch((e) => console.log(e));
