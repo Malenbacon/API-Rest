@@ -36,6 +36,15 @@ const gameController = {
         catch(error){
             console.log(error)
         }
+    },
+
+    delete: async(req,res) => {
+        try {
+            const gameToBeDeleted = req.body.name;
+            gameModel.deleteOne()
+        } catch (error) {
+            console.log(error)
+        }
     }
 }
 
